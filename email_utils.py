@@ -31,19 +31,20 @@ def get_welcome_template(email: str, password: str, login_url: str) -> str:
       </td>
     </tr>
     <tr>
-      <td style="padding: 30px;">
-        <h2 style="color: #1d3557;">👋 Welcome to Inventory Management System</h2>
-        <p style="color: #555;">We're excited to have you onboard! Your account has been successfully created.</p>
+      <td style="padding: 10px 20px 20px 20px;">
+        <h2 style="color: #1d3557; margin-top:0;">👋 Welcome to Inventory Management System</h2>
+
+    
+
+        <p style="color: #555;">Your store setup is complete! We've created your personalized dashboard with all the tools you need to manage your online business. Use the credentials below to access your store administration panel.</p>
 
         <div style="background-color: #f1f3f8; padding: 20px; border-radius: 6px; text-align: center; margin: 20px 0;">
-          <p style="margin: 0; font-weight: bold; color: #1d3557;">🔐 Your temporary password:</p>
+          <p style="margin: 0; font-weight: bold; color: #1d3557;">🔐 Your Login Credentials:</p>
           <p style="font-size: 20px; font-weight: bold; margin: 10px 0; color: #2c3e50;">{ password}</p>
+          <p style="color: #555;"><a href="mailto:{ email }" style="color: #1a73e8;">{email}</a></p>
         </div>
 
-        <p style="color: #555;">Use this password to log in and access the Inventory Management System.</p>
-        <p style="color: #555;">Hello <a href="mailto:{ email }" style="color: #1a73e8;">{email}</a>,</p>
-
-        <div style="text-align: center; margin: 30px 0;">
+         <div style="text-align: center; margin: 30px 0;">
           <a href="{ login_url }" style="background-color: #2d69f6; color: white; text-decoration: none; padding: 12px 24px; border-radius: 5px; font-weight: bold;">🔑 Login to Your Store</a>
         </div>
 
@@ -53,7 +54,7 @@ def get_welcome_template(email: str, password: str, login_url: str) -> str:
 
         <p style="font-size: 12px; color: #aaa; text-align: center;">
           If you received this email by mistake, you can ignore it safely.<br />
-          — IMS Team
+          — Optiven
         </p>
       </td>
     </tr>
